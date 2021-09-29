@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg);
+  background-size: 100%;
+  background-repeat: none;
+}
+
+.Home {
+  position: absolute;
+}
+
+nav {
+  background-color:black;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 25px;
+  top: 0rem;
+  z-index: 100;
+}
+
+nav:hover {
+  background-color: rgba(166, 197, 209, 0.897);
+  transition: 2s;
+}
+
+.nav h2 {
+  color: white;
+}
+
+.nav button {
+  padding: 8px 5px;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 20px;
+  display: block;
+}
+
+.nav button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.usrcard {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 50px;
+  margin: 1rem;
+  padding: 100px 130px;
+}
+
+.card {
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-image: url(https://mfiles.alphacoders.com/619/619331.jpg);
+  height: 50vh;
+  background-size: 100%;
+  border-radius: 35px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.pic img {
+  border-radius: 100px;
+}
+
+.details {
+  padding: 5px;
+}
+
+.details p {
+  padding: 10px;
+  color: aquamarine;
+}
+
+.details h3 {
+  color: #e6e3e3;
+}
+
+.social h3 {
+  color: ivory;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 33px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 2px 0px;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa-facebook:hover {
+  color: rgb(6, 41, 145);
+}
+
+.fa-instagram:hover {
+  color: rgb(228, 10, 46);
+}
+
+.fa-twitter:hover {
+  color: rgb(27, 140, 185);
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 350px;
+  margin-left: 715px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
